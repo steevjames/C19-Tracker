@@ -1,5 +1,5 @@
-import 'package:datacollect/collectdata.dart';
-import 'package:datacollect/qrCode.dart';
+import 'package:datacollect/Pages/collectdata.dart';
+import 'package:datacollect/Pages/qrCode.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
