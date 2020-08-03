@@ -80,10 +80,7 @@ class _DataCollectionState extends State<DataCollection> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(
-          "C19 Tracker",
-          style: TextStyle(fontSize: 22),
-        ),
+        title: Text("C19 Tracker"),
         centerTitle: true,
         backgroundColor: primaryColor,
         elevation: 0,
@@ -146,7 +143,17 @@ class _DataCollectionState extends State<DataCollection> {
                 onChanged: (value) {
                   address = value;
                 },
-                decoration: inpDec("Address", Icons.place),
+                maxLines: 3,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                  labelText: "Address",
+                  contentPadding:
+                      EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  labelStyle: TextStyle(fontSize: 13),
+                  icon: Icon(Icons.place, color: primaryColor),
+                ),
               ),
               SizedBox(height: 20),
               TextFormField(
