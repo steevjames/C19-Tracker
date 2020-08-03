@@ -12,7 +12,7 @@ class _HomePageState extends State<HomePage> {
   getData() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String userData = prefs.getString("userData");
-    print("Data from homepage\n $userData");
+    print("Data from homepage: $userData");
     return userData ?? "empty";
   }
 
