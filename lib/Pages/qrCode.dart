@@ -36,6 +36,10 @@ class QRCodePage extends StatelessWidget {
         backgroundColor: primaryColor,
         elevation: 0,
         shape: CustomShapeBorder(),
+        // leading: IconButton(
+        //   icon: Icon(Icons.arrow_back_ios, color: Colors.white),
+        //   onPressed: clearData,
+        // ),
       ),
       backgroundColor: Colors.white,
       body: Padding(

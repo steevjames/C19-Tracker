@@ -1,4 +1,4 @@
-import 'package:datacollect/Pages/homepage.dart';
+import 'package:datacollect/Pages/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      home: Splashscreen(),
     );
   }
 }
