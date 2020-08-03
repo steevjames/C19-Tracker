@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 
 class Splashscreen extends StatelessWidget {
   gotoHomePage(context) async {
-    await Future.delayed(Duration(microseconds: 500));
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => HomePage()),
-    );
+    Future.delayed(const Duration(milliseconds: 800), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => HomePage()),
+      );
+    });
   }
 
   @override

@@ -70,7 +70,7 @@ class QRCodePage extends StatelessWidget {
             ),
             SizedBox(height: 40),
             RaisedButton(
-              child: Text("Clear Data"),
+              child: Text("Change information"),
               onPressed: clearData,
               color: primaryColor,
               textColor: Colors.white,
