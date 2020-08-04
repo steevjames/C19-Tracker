@@ -65,8 +65,8 @@ class QRCodePage extends StatelessWidget {
             SizedBox(height: 20),
             QrImage(
               data: userData,
-              backgroundColor: Color(0xff333344),
-              foregroundColor: Colors.white,
+              foregroundColor: Color(0xff333344),
+              backgroundColor: Colors.white,
             ),
             SizedBox(height: 40),
             RaisedButton(

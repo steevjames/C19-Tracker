@@ -15,6 +15,7 @@ class Splashscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     gotoHomePage(context);
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
         child: Image.asset(
           "assets/icon.png",
