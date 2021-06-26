@@ -28,7 +28,7 @@ class QRCodePage extends StatelessWidget {
         ? userJSON["Address"].substring(0, 20) + "...."
         : userJSON["Address"];
     address = address.replaceAll("\n", " ");
-    String aadhar = userJSON["Aadhar"];
+    String aadhar = userJSON["Aadhar"].toString();
     return Scaffold(
       appBar: AppBar(
         title: Text("C19 Tracker"),

@@ -14,10 +14,10 @@ class _DataCollectionState extends State<DataCollection> {
   final _formKey = GlobalKey<FormState>();
   String name;
   String address;
-  String aadhar;
+  int aadhar;
   String selectedDate;
   bool dobError = false;
-  Map<String, String> result;
+  Map<String, dynamic> result;
   Color primaryColor = Colors.blue;
 
   Future<void> _selectDate(BuildContext context) async {
@@ -164,7 +164,7 @@ class _DataCollectionState extends State<DataCollection> {
                 },
                 keyboardType: TextInputType.number,
                 onChanged: (value) {
-                  aadhar = value;
+                  aadhar = int.parse(value);
                 },
                 decoration: inpDec("Aadhar", Icons.confirmation_number),
               ),
